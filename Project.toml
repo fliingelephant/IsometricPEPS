@@ -1,0 +1,13 @@
+name = "IsometricPEPS"
+uuid = "97c79e83-6148-4a8c-afa3-e5d718cc8914"
+authors = ["Huanhai Zhou"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
