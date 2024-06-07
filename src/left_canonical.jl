@@ -26,7 +26,6 @@ Perform left canonicalization on an LMPS.
 An LMPS which consists of an isometric left boundary tensor of order 2 and (n-1) left canonical tensors of order 3.
 """
 function left_canonicalize!(mps::LMPS, atol::Real=0)
-    # Perform left canonicalization
     l, r = mps.left, mps.tensors[1] 
     ml, mr = reshape(l, :, size(l)[end]), reshape(r, size(r, 1), :)
     u, s, v, trunc = truncated_svd(ml * mr, size(ml, 2), atol)
